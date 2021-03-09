@@ -1,12 +1,17 @@
 package domain;
 
-public class Alumno {
+public class Alumno extends Persona{
 	
 	private String matricula;
 	private String curso;
 	
-	public Alumno() {}
 	
+	public Alumno(String nombre, int edad, String matricula,
+			String curso) {
+		super(nombre, edad);
+		this.matricula = matricula;
+		this.curso = curso;
+	}
 	public String getMatricula() {
 		return matricula;
 	}

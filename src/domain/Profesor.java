@@ -1,12 +1,21 @@
 package domain;
 
-public class Profesor {
+public class Profesor extends Persona{
 	
 	private double salario;
 	private String especialidad;
 	private String asignatura;
 	
-	public Profesor() {}
+	
+
+	public Profesor(String nombre, int edad, 
+			double salario, String especialidad, 
+			String asignatura) {
+		super(nombre, edad);
+		this.salario = salario;
+		this.especialidad = especialidad;
+		this.asignatura = asignatura;
+	}
 
 	public double getSalario() {
 		return salario;
