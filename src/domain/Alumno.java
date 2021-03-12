@@ -25,6 +25,10 @@ public class Alumno extends Persona{
 		this.curso = curso;
 	}
 
+	public void responderLista(String saludo) {
+		System.out.println(saludo);
+	}
+	
 	@Override
 	public String toString() {
 		return "Alumno [matricula=" + matricula + ", curso=" + curso + "]";
