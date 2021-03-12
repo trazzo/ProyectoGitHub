@@ -12,6 +12,7 @@ public class Alumno extends Persona{
 		this.matricula = matricula;
 		this.curso = curso;
 	}
+	
 	public String getMatricula() {
 		return matricula;
 	}
@@ -23,6 +24,14 @@ public class Alumno extends Persona{
 	}
 	public void setCurso(String curso) {
 		this.curso = curso;
+	}
+	
+	public boolean comprobarEdad() {
+		if(this.getEdad() >= 18) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	@Override
